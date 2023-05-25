@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+.card-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.card-url {
+  color: #999999;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.card-url:hover {
+  color: #0078d7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #0078d7;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+.card:before {
+  content: "";
+  width: 20px;
+  height: 100%;
+  background-color: #30ae69;
+  position: absolute;
+  left: -10px;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover:before {
+  width: 30px;
+}
+
+.card:hover {
+  transform: translateX(10px);
+}
